@@ -78,6 +78,9 @@ exports.deleteThing = (req, res, next) => {
     .catch((error) => {
       res.status(500).json({ error });
     });
+  // ThingController.deleteOne({ _id: req.params.id })
+  //   .then(() => res.status(200).json({ message: "Object suprime" }))
+  //   .catch((error) => res.status(400).json({ error }));
 };
 
 exports.getOneThing = (req, res, next) => {
